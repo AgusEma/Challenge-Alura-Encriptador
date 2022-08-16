@@ -24,17 +24,19 @@
           
           <div class="box-button-child">
             <p>☞ Solo letras minúsculas y sin acentos</p>
-            <input class="btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar"></input>
-            <input class="btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar"></input>
+            <input class="btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar" onclick="encriptar()"></input>
+            <input class="btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar" onclick="desencriptar()"></input>
           </div>
         </div>
       </section>
 
       <section class="container-right">
-        <img src="img/muneco.png" alt="muneco" class="muneco">
-        <p>Ningún mensaje fue encontrado</p>
-        <textarea name="" id="" cols="30" rows="9" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+        <img src="img/muneco.png" alt="muneco" id="muneco" class="muneco">
+        <p id="texto-muneco">Ningún mensaje fue encontrado</p>
+        <textarea name="name" class="textarea-muneco" id="textarea-muneco" cols="30" rows="9" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+        <input class="btn-copiar" type="submit" value="Copiar" id="btn-copiar" onclick="copiar()"></input>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
